@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML page</title>
+        <style>
+            body {
+               background-color: aliceblue;
+            }
+            h1 {
+                color: black;
+            } 
+            p {
+                color:blue;
+            }
+            h4{position: absolute;
+            left: 100px;
+            top: 290px; 
+            color: white;
+            background-color: black;
+        
+            }
+            </style>
+            </head>
+        <body>
+            <h1>BENGALURU</h1>
+            <p>Bangalore, officially Bengaluru, is the capital and largest city of the southern Indian state of Karnataka. It has a population of more than 8 million and a metropolitan population of around 11 million, making it India's third most populous city and fifth most populous urban agglomeration, as well as South India's second-largest urban agglomeration, and the 27th largest city in the world.</p>
+            </body>
+            <div>
+            <img src="blrimg.png"
+            width=300 height="200">
+            <h4>BENGALURU</h4>
+            </div>
+            <table>
+                <tr>
+                    <th>Population</th>
+                    <th>Economy</th>
+                    <th>Area</th>
+                </tr>
+                <td>13,608,000</td>
+                <td>$110 billion</td>
+                <td>741sq.km</td>
+            </table>
+            <style>
+                .scroll-left {
+                 height: 30px;	
+                 overflow: hidden;
+                 position: relative;
+                 background: white;
+                 color: white;
+                 border: 1px solid black;
+                }
+                .scroll-left p {
+                 position: absolute;
+                 width: 100%;
+                 height: 100%;
+                 margin: 0;
+                 line-height: 50px;
+                 text-align: center;
+                 -moz-transform:translateX(100%); */
+                  -webkit-transform:translateX(100%);	 */
+                  transform:translateX(100%); */
+        	
+                 -moz-animation: scroll-left 15s linear infinite;
+                 -webkit-animation: scroll-left 15s linear infinite;
+                 animation: scroll-left 15s linear infinite;
+                }
+                
+                @-moz-keyframes scroll-left {
+                 0%   { -moz-transform: translateX(100%); }
+                 100% { -moz-transform: translateX(-100%); }
+                }
+                @-webkit-keyframes scroll-left {
+                 0%   { -webkit-transform: translateX(100%); }
+                 100% { -webkit-transform: translateX(-100%); }
+                }
+                @keyframes scroll-left {
+                 0%   { 
+                 -moz-transform: translateX(100%); 
+                 -webkit-transform: translateX(100%); 
+                 transform: translateX(100%); 		
+                 }
+                 100% { 
+                 -moz-transform: translateX(-100%); 
+                 -webkit-transform: translateX(-100%); 
+                 transform: translateX(-100%); 
+                 }
+                }
+                </style>
+                
+                <div class="scroll-left">
+                <p><a href="https://en.wikipedia.org/wiki/Bangalore" >Click here to know more</a> </p>
+                </div>
+                
+</html>
+            

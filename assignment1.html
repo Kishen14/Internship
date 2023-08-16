@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="./Fullpage.css">
+</head>
+<body>
+    <div class="container">
+    <div class="container1">
+        
+        <h2 style="padding: 3px;">Billing Address </h2>
+        <form action="" method="get">
+            
+            <div class="name">
+                <label for="firstname">FirstName</label>
+                <label for="lastname">LastName</label>
+           
+                <input type="text" name="firstname" id="firstname" class="formdata">
+                <input type="text" name="lastname" id="lastname" class="formdata">
+            </div>
+                
+             <label for="username">Username</label>
+                <input type="username" name="username" id="username" placeholder="@Username" class="formdata"> 
+
+                <label for="email">Email<span class="lighter">(Optional)</span></label>
+                <input type="email" name="username" id="username" class="formdata" placeholder="you@example.com"> 
+            
+                <label for="address">Address</label>
+                <input type="text" name="username" id="username" class="formdata" placeholder="1234 Main st"> 
+
+                <label for="address">Address 2<span class="lighter">(Optional)</span></label>
+                <input type="test" name="username" id="username" class="formdata" placeholder="Apartment or Suite">
+                <div class="country-data">
+                    <label for="country">Country</label>
+                    <label for="state">State</label>
+                    <label for="zip">Zip</label>
+                    <select name="country" id="country">
+                        <option value="choose" class="lighter">Choose..</option>
+                        <option value="india">India</option>
+                    </select>
+                    <select name="state" id="state">
+                        <option value="choose" class="lighter">Choose..</option>
+                        <option value="karnataka">Karnataka</option>
+                    </select>
+                    <input type="text" id="zip">
+                </div> 
+                <section class="checkboxes">
+                    <input type="checkbox" name="shipping" id="address">
+                    <label for="shipping">Shipping Address is same as my billing address</label>
+                    <br>
+                    <input type="checkbox" name="save" id="information">
+                    <label for="save">Save this information for next time</label>
+                </section>
+                <section class="payment">
+                    <h2><strong>Payment</strong></h2>
+                    <input type="radio" name="credit" id="card">
+                    <label for="creditcard">Credit Card</label>
+                    <br>
+                    <input type="radio" name="debit" id="card">
+                    <label for="debitcard">Debit Card</label>
+                    <br>
+                    <input type="radio" name="paypal" id="paypallink">
+                    <label for="paypal">Paypal</label>
+                    <br>
+                    <div class="card1">
+                        <label for="name">Name on Card</label>
+                        <label for="creditcard">Credit Card Number</label>
+                        <input type="text" name="name" id="name">
+                        <input type="number" name="card" id="car">
+                        <h5 class="lighter">Full Name as displayed on card</h5>
+                    </div>
+                    <div class="card2">
+                        <label for="month">Expiration</label>
+                        <label for="cvv">CVV</label>
+                        <input type="expire" name="expire" id="expire">
+                        <input type="cvv" name="cvv" id="cvv">
+                    </div>
+                </section>
+                <section>
+                    <button class="continue" type="submit">Continue to Checkout</button>
+                </section>
+           
+    </form>
+    </div>
+    <div class="container2">
+        <div class="card2">
+        <h2 class="lighter">Your cart</h2>
+        <button class="button">3</button>
+    </div>
+<table class="cart">
+<tr  style="border-bottom:2px solid rgb(198, 195, 195)">
+    <td><h4 class="light">Product name</h4>
+        <h5 class="light1">Brief Desciption</h5>
+    </td>
+    <td>
+        <h4 class="light" style="padding-left:10px;margin-right:0px">$12</h4>
+    </td>
+</tr>
+<tr style="border-bottom:2px solid rgb(198, 195, 195)">
+    <td><h4 class="light">Second Product</h4>
+        <h5 class="light1">Brief Desciption</h5>
+    </td>
+    <td>
+        <h4 class="light" style="padding-left:10px;margin-right:0px">$8</h4>
+    </td>
+</tr>
+<tr style="border-bottom:2px solid rgb(198, 195, 195)">
+    <td><h4 class="light">Third Item</h4>
+        <h5 class="light1">Brief Desciption</h5>
+    </td>
+    <td>
+        <h4 class="light" style="padding-left:10px;margin-right:0px">$5</h4>
+    </td>
+</tr>
+<tr style="border-bottom:2px solid rgb(198, 195, 195);background-color: rgb(217, 214, 214);">
+    <td><h4 class="light" style="color:green">Promo Code</h4>
+        <h5 class="light1" style="color:green">EXAMPLECODE</h5>
+    </td>
+    <td>
+        <h4 class="light" style="padding-left:10px;color:green">-$5</h4>
+    </td>
+</tr>
+<tr style="border-bottom:2px solid rgb(198, 195, 195)">
+    <td><h4 class="light">Total (USD)</h4>
+        
+    </td>
+    <td>
+        <h4 class="light" style="padding-left:10px;margin-right:0px;height:20px">$20</h4>
+    </td>
+</tr>
+</table>
+
+<table class="cart">
+<tr>
+    <td >
+        <input type="text" placeholder="Promo Code" class="light" style="font-size:14px;width: 200px;height:35px;margin-right:0%">
+
+    </td>
+    <td  style="width: 200px;">
+        <button type="submit" style="height: 35px;width:100px">Redeem</button>
+    </td>
+</tr>
+
+</table>
+</div>
+ 
+
+
+</div>
+</body>
+<center>
+    <footer>
+        <p >
+            &copy;2017-2018 Company Name 
+            <br>
+            <a href="#" style="text-decoration: none;">Privacy</a>
+            <a href="#" style="text-decoration: none;">Terms</a>
+            <a href="#" style="text-decoration: none;">Support</a>
+        </p>
+    </footer>
+</center>
+
+</html>
