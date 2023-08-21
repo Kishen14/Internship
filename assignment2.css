@@ -5,22 +5,23 @@
 h1{
     margin: 25px;
 }
+/* This is for grid without bootstrap */
 .container{
     padding-top: 4%;
     margin-top: 1%;
-    display: grid;
+    /* display: grid; */
     grid-template-columns: repeat(3,1fr);
     width: 100%;
     place-items: center;
     gap:30px;
-    /* width: 100%; */
+      width: 100%;  
     margin-bottom: 40px;
-    background-color: rgb(244, 230, 230);
+    background-color: rgb(132, 91, 91);
 }
 .box{
     width:400px;
     height: 380px; 
-    border: 1px solid rgb(192, 187, 187);
+    border: 1px solid rgb(246, 248, 247);
     border-radius: 5px;
     box-shadow: rgba(65, 64, 64, 0.2) 0px 2px 8px 0px;
     
@@ -93,15 +94,18 @@ img{
     }
     
 }
+.btn-primary{
+    color: rgba(237, 6, 6, 0.966) !important;
+} 
+
 @media only screen and (max-width:425px) {
     .container{
         grid-template-columns: repeat(1,1fr);
     }
-    .btn1{
+    .btn1 {
         width: 30%;
     }
-    .btn2{
-        width: 30%;
+    .btn2 {
+       width: 30%;
     }
-    
 }

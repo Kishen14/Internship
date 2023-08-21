@@ -1,0 +1,47 @@
+
+*{
+    font-family: 'Times New Roman', Times, serif;
+}.image{
+    width: 35px;
+    height: 35px;
+}
+.card-columns{
+    width: 80%;
+    background-color: rgb(83, 80, 80);
+    align-items: center;
+    justify-items: center;
+    margin: 0 10rem;
+    color: azure;
+    border-radius: 8px;
+}
+/* .card-title{
+    /* font-family:Verdana, Geneva, Tahoma, sans-serif; 
+    padding-left: 5px;
+} */
+.card-link{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    
+}
+.cards{
+    margin-top: 3%;
+}
+.card{
+    max-width: 100%;
+}
+.from{
+    font-style: italic;
+    font-weight: bolder;
+}
+.title{
+    font-style: italic;
+}
+img{
+    width: 60%;
+    height: 70%;
+    border-radius: 0 5px 5px 0;
+}
+.first-post{
+    margin-bottom: 10%;
+}
