@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.name{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(50, 206, 50);
+}
+.vertical{
+    border-left : 1px solid rgb(173, 171, 171) ;
+    height: max-content;
+}
+.vertical-green{
+    border-left : 4px solid darkgreen ;
+    height: max-content;
+    
+}
+.header-green{
+    color: darkgreen;
+    font-weight: bold;
+}
+strong{
+    font-size: larger;
+}
+.bolder{
+    font-weight: bold;
+}
+.footer{
+    align-items: center;
+    justify-items: center;
+    padding: 0 30%;
+}
