@@ -40,19 +40,36 @@ function submitAction() {
 
 function displayTable(obj) {
   tableBody.innerHTML = "";
-  let sl = 1;
-  obj.forEach((element) => {
-    x = document.createElement("TR");
-    x.setAttribute("id", `row${element.keyValue}`);
-    x.innerHTML = `<tr><td>${sl}</td><td>${element.name}</td><td>${element.regNo}</td><td>${element.grade}</td><td colspan="2"><div class="row g-2 ">
-<div id="update${element.keyValue}"  class="d-none col-6"><button class="btn w-100 px-2 btn-secondary" onclick="updateData(${element.keyValue})">Update</button></div>
-<div id="edit${element.keyValue}" class="d-inline col-6"><button class="btn w-100 btn-primary"  onclick="editData(${element.keyValue})">Edit</button></div>
-<div id="cancel${element.keyValue}" class="d-none col-12"><button class="btn w-100 btn-danger"  onclick="cancelEdit(${element.keyValue})">Cancel</button></div>
-<div id="delete${element.keyValue}" class="d-inline col-6"><button class="btn w-100 btn-danger onclick="deleteData(${element.keyValue})" " >Delete</button></div> </div></td></tr>`;
-    tableBody.appendChild(x);
-    sl++;
-  });
-}
+  tableBody.innerHTML = ""
+  let sl = 1
+  obj.forEach(element => {
+      x = document.createElement('TR')
+      x.setAttribute('id', `row${element.keyValue}`)
+      x.innerHTML = `<tr>
+      <td>${sl}</td>
+      <td>${element.name}</td>
+      <td>${element.regNo}</td>
+      <td>${element.grade}</td>
+      <td colspan="2">
+          <div class="row g-2 ">
+              <div id="update${element.keyValue}" class="d-none col-md-6 ">
+                  <button class="btn w-100  btn-success"  onclick="updateData(${element.keyValue})">Update</button>
+              </div>
+              <div id="edit${element.keyValue}" class="d-block col-md-6 ">
+                  <button class="btn w-100  btn-info"  onclick="editData(${element.keyValue})">Edit</button>
+              </div>
+              <div id="cancel${element.keyValue}" class="d-none col-12 ">
+                  <button class="btn w-100 btn-danger"  onclick="cancelEdit(${element.keyValue})">Cancel</button>
+              </div>
+              <div id="delete${element.keyValue}" class="d-block col-md-6">
+                  <button onclick="deleteData(${element.keyValue})" class="btn  w-100 btn-danger" >Delete</button>
+              </div>
+          </div>
+      </td></tr>`
+      tableBody.appendChild(x)
+      sl++
+  });
+} 
 
 function deleteData(keyValue) {
   if (!statusMode.localeCompare("normal")) {
